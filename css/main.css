@@ -1,3 +1,8 @@
 body {
   padding: 1rem;
 }
+
+#result {
+  border: .25rem dashed #aaa;
+  padding: 2rem;
+}
