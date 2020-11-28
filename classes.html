@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>
+			JavaScript Classes
+  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<nav>
+	<a href='index.html'>&lt; return to index</a>
+</nav>
+<h2>
+  JavaScript classes
+</h2>
+
+<h3>
+	ES6
+</h3>
+<code>
+class Vehicle {
+	constructor(occupancy, wheels, maximumSpeed) {
+		this.occupancy = occupancy;
+		this.wheels = wheels;
+		this.maximumSpeed = maximumSpeed;
+	}
+	accelerate(amount) {
+		this.speed += amount;
+	}
+	decelerate(amount) {
+		this.speed -= amount;
+	}
+	park() {
+		this.speed = 0;
+	}
+}
+</code>
+
+<p>
+		Create a new vehicle with:
+		<fieldset>
+			<label for="occupancy">occupancy</label> <input type="number" id="occupancy" />
+		</fieldset>
+		<fieldset>
+			<label for="occupancy">wheels</label> <input type="number" id="wheels" />
+		</fieldset>
+		<fieldset>
+			<label for="maximumSpeed">maximum speed</label> <input type="number" id="maximumSpeed" />
+		</fieldset>
+
+		<button onclick="create()">Create</button>
+</p>
+
+<script src="./js/classes.js"></script>
+</body>
+</html>
